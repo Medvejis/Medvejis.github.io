@@ -1,0 +1,155 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+@keyframes banner{
+	0%{
+		transform:translateY(-20px);
+		opacity:0;
+	}
+	to{
+		transform:translateY(0);
+		opacity:1;
+	}
+}
+a {
+	color: #E53935;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Fira Sans', sans-serif;
+	line-height: 1;
+}
+.banner {
+	height: 100vh;
+	color:#CFD8DC;
+	min-height: 40em;
+	background: #3B3F45;
+	animation-delay: 1s;
+}
+.banner .main {
+	width: 50%;
+	min-width: 960px;
+	margin: 0 auto;
+	padding: 5em 0;
+}
+.banner #logo {
+	width: 124px;
+	height: 124px;
+	display: block;
+	margin-bottom: 3em;
+}
+.banner h1{
+	font-size: 3em;
+	display: block;
+	line-height: 110%;
+	margin: 0 0 2em;
+}
+.banner h1 a {
+	text-decoration: underline;
+	color:#16a085;
+}
+
+.banner h1 span {
+	display: block;
+	opacity: 0.6;
+	font-weight: 700;
+	font-size: 80%;
+}
+.banner p {
+	color: #78909C;
+	margin: 0 0 1em;
+	line-height: 1.5;
+}
+.banner img, .banner h1, .banner p{
+	opacity: 0;
+	transform: translateY(-20px);
+	animation: banner .6s .5s 1 forwards ease-in-out;
+}
+												/*  content  */
+#content{
+	background: #E0E0E0;
+}
+ul > li{list-style: none;}												
+
+#projects h1, #skills h1{
+	font-size: 2em;
+	color:#E53935;
+	text-align:center;
+	margin-bottom: 40px;
+}
+#projects, #skills{
+	width:45%;
+	float:left;
+	padding: 100px 2.5%;
+}
+#content ul li{
+	padding-left: 20px;
+	padding-top: 8px;
+	line-height: 20px;
+}
+#content ul {
+	margin-bottom: 20px
+}
+#content .item > .tag{
+	font-size: 0.8em;
+	vertical-align: middle;
+}
+#content .item > .tag::before{
+	content:'[';}
+#content .item > .tag::after{
+	content:']';
+}
+#skills .levels b {font-size: 1.2em;margin-bottom: 20px;display: block;}
+#skills .levels > ul{
+	margin-left: 40px;
+}
+
+
+
+
+#contacts{
+	background: #3B3F45;
+	color:#E0E0E0;
+}
+#contacts h1 {
+	font-size: 2em;
+	text-align:center;
+	display: block;
+	padding: 40px 0;
+}
+#contacts .item{
+	display: inline-block;
+	width: 20%;
+	float:left;
+	text-align: center;
+	padding: 40px 0;
+}
+#contacts .item b {
+	display: block;
+	line-height: 3em
+}
+#contacts .item span {
+	display: block;
+}
+
+
+.clear{
+	clear:both;
+}
+i.hidden {
+	height: 0px;
+	width: 0px;
+	opacity: 0;
+	padding: 0;
+	margin: 0;
+	display: none;
+}
